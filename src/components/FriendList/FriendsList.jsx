@@ -1,4 +1,4 @@
-import FriendsCard from './FriendsCard';
+import FriendListItem from './FriendListItem';
 import PropTypes from 'prop-types';
 import { FriendList } from './Friends.styled';
 
@@ -7,7 +7,7 @@ function FriendsList({ friends }) {
     <FriendList>
       {friends.map(({ id, avatar, isOnline, name }) => (
         <li key={id}>
-          <FriendsCard avatar={avatar} isOnline={isOnline} name={name} />
+          <FriendListItem avatar={avatar} isOnline={isOnline} name={name} />
         </li>
       ))}
     </FriendList>
