@@ -5,13 +5,9 @@ import { FriendList } from './Friends.styled';
 function FriendsList({ friends }) {
   return (
     <FriendList>
-      {friends.map(({id, avatar, isOnline, name}) => (
+      {friends.map(({ id, avatar, isOnline, name }) => (
         <li key={id}>
-          <FriendsCard
-            avatar={avatar}
-            isOnline={isOnline}
-            name={name}
-          />
+          <FriendsCard avatar={avatar} isOnline={isOnline} name={name} />
         </li>
       ))}
     </FriendList>
@@ -25,7 +21,7 @@ FriendList.propTypes = {
       id: PropTypes.number.isRequired,
       name: PropTypes.string.isRequired,
       isOnline: PropTypes.bool.isRequired,
-    })
+    }).isRequired
   ).isRequired,
 };
 
