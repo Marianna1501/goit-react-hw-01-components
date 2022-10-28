@@ -1,8 +1,8 @@
-import Profile from './components/Pr/Profile';
-import Statistics from './components/St/Statistics';
+import Profile from './components/Profile/Profile';
+import Statistics from './components/Statistics/Statistics';
 import FriendsList from './components/FriendList/FriendsList';
 import Transaction from './components/TransactionHistory/Transaction';
-import { Wrapper } from 'components/Wr/Container.styled';
+import { Wrapper } from 'components/Container/Container.styled';
 
 import user from './data/user.json';
 import statisticalData from './data/statistical-data.json';
