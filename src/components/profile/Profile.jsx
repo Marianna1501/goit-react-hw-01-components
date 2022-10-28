@@ -13,7 +13,7 @@ import {
 
 export default function Profile({
   avatar,
-  username = 'Jacques Gluke',
+  username,
   tag,
   location,
   stats,
