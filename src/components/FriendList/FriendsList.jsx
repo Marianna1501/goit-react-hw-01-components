@@ -21,7 +21,7 @@ FriendList.propTypes = {
       id: PropTypes.number.isRequired,
       name: PropTypes.string.isRequired,
       isOnline: PropTypes.bool.isRequired,
-    }).isRequired
+    })
   ).isRequired,
 };
 
